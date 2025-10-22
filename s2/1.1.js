@@ -17,7 +17,7 @@ const filterWords = (words, forbiddenWord, minLength) => {
         if (word !== forbiddenWord && word.length >= minLength) {
             return true
         }
-        return false;
+        return false
     })
     return result
 }
