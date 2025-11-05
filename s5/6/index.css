@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    background-color: orangered;
+    width: 200px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    background-color: #daa520;
+}

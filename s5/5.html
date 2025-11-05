@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 5px solid #f1f1f1;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 12px 0px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            display: inline-block;
+            margin: 8px 0px;
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: #fff;
+            padding: 14px 20px;
+            margin: 8px 0px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .cancel-buttton {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        span.forgot-password {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login Form</h2>
+    <form action="javascript:" method="post">
+        <div class="imgcontainer">
+            <!--use an avatar image-->
+            <img class="avatar" src="avatar.png" />
+        </div>
+        <div class="container">
+            <label for="username"><b>User Name</b></label>
+            <input type="text" placeholder="Enter User Name" name="username" required>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" name="remember" checked="checked">Remember me
+            </label>
+        </div>
+        <div class="container">
+            <button type="button" class="cancel-buttton">Cancel</button>
+            <span class="forgot-password">Forgot <a href="#">password?</a> </span>
+        </div>
+    </form>
+</body>
+
+</html>
