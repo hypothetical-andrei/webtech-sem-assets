@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "rimraf": "^6.1.0"
+  }
+}

@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <style type="text/css">
+        body {
+            margin: 0px;
+        }
+
+        .ui {
+            height: 100vh;
+        }
+
+        .menu {
+            height: 5vh;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            background-color: tomato;
+        }
+
+        .menu-item {
+            min-width: 200px;
+            height: 100%;
+            border: 1px gold dashed;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .burger-menu {
+            display: none;
+        }
+
+        @media screen and (max-width: 500px) {
+            .menu {
+                display: none;
+            }
+
+            .burger-menu {
+                display: block;
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                height: 3em;
+                width: 3em;
+                border-radius: 50%;
+                background-color: lightgray;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ui">
+        <div class="menu">
+            <div class="menu-item">first</div>
+            <div class="menu-item">second</div>
+            <div class="menu-item">third</div>
+            <div class="menu-item">fourth</div>
+        </div>
+        <div class="burger-menu">☰</div>
+        <div class="content">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat
+            non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat
+            non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat
+            non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum </div>
+    </div>
+</body>
+
+</html>

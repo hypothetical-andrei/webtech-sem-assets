@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      height: 400px;
+      width: 400px;
+      background-color: lightgray;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      margin-top: 3px;
+      padding: 5px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      width: auto;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Contact form</h3>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="first name" />
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="last name" />
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="subject">Subject:</label>
+    <textarea id="subject" name="subject" placeholder="something..."></textarea>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>

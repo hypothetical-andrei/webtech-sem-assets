@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 32px;
+}
+
+.content-holder {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+    height: 80%;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+.chat {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-gap: 8px;
+    background-color: grey;
+    padding: 16px;
+}
+
+.chat-item {
+    height: 32px;
+    background-color:
+        white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.18);
+    padding: 8px;
+}
+
+.action-bar {
+    width: 180%;
+    height: 20%;
+}

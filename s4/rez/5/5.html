@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactsDiv = document.getElementById('contactsContent')
+      const contactNameTxt = document.getElementById('contactName')
+      const contactPhoneTxt = document.getElementById('contactPhone')
+
+      const addBtn = document.getElementById('addBtn')
+      addBtn.addEventListener('click',  () => {
+        contactsDiv.innerHTML += `<div>${contactNameTxt.value} - ${contactPhoneTxt.value}</div>`
+        contactNameTxt.value = ''
+        contactPhoneTxt.value = ''
+      })
+    })
+  </script>
+</head>
+<body>
+  <h1>Agenda</h1>
+  <div id="contactsContent"></div>
+  <div id="contactsForm">
+    <input type="text" id="contactName" />
+    <input type="text" id="contactPhone" />
+    <input type="button" id="addBtn" value="+" />
+  </div>
+</body>
+</html>

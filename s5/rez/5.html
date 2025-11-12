@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+    .container {
+      height: 300px;
+      width: 300px;
+    }
+
+    .row {
+      text-align: center;
+    }
+
+    .square {
+      height: 100px;
+      width: 100px;
+      float: left;
+      box-sizing: border-box;
+      border: 1px solid gray;
+    }
+
+    .square.left {
+      border-left: none;
+    }
+
+    .square.top {
+      border-top: none;
+    }
+
+    .square.right {
+      border-right: none;
+    }
+
+    .square.bottom {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="row">
+      <div class="top left square"></div>
+      <div class="top center square"></div>
+      <div class="top right square"></div>
+    </div>
+    <div class="row">
+      <div class="middle left square"></div>
+      <div class="middle center square"></div>
+      <div class="middle right square"></div>
+    </div>
+    <div class="row">
+      <div class="bottom left square"></div>
+      <div class="bottom center square"></div>
+      <div class="bottom right square"></div>
+    </div>
+</body>
+</html>
