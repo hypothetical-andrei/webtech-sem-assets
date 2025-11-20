@@ -7,7 +7,7 @@ router.get("/departments", (req, res) => {
     res.status(200).json(departments);
 });
 
-router.get("/departments/:id", checkId, (req, res) => {
+router.get("/departments/:id", (req, res) => {
     const department = departments.find(
         (department) => department.id === Number(req.params.id)
     );
