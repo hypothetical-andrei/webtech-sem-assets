@@ -6,9 +6,9 @@ const port = 3000
 
 const bookRouter = express.Router()
 
-app.use('/api', bookRouter)
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+app.use('/api', bookRouter)
 
 
 let books = [new Book(1, "Dune", "sf", "Frank Herbert"),
@@ -39,7 +39,7 @@ bookRouter.route('/books')
 //Step 3 - PUT request  //(imi da eroare)
 bookRouter.route('/books/:bookId')
     .put((req, res) => {
-        let bookModif = books.find(e => e.id === Number(req.params.id))
+        let bookModif = books.find(e => e.id === Number(req.params.bookId))
         //bookModif.name = req.body.name
         bookModif.genre = req.body.genre
         bookModif.author = bookModif.author

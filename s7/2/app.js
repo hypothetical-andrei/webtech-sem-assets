@@ -6,9 +6,9 @@ const port = 3000
 
 const bookRouter = express.Router()
 
-app.use('/api', bookRouter)
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+app.use('/api', bookRouter)
 
 
 let books = [new Book(1, "Dune", "sf", "Frank Herbert"),
